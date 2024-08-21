@@ -1,11 +1,9 @@
 import React from 'react'
 
-function page() {
+export default function page() {
   return (
     <div>
-      <p>We're back up whos capping</p>
+      <h1 className='text-red-500'>Home Page</h1>
     </div>
   )
 }
-
-export default page
