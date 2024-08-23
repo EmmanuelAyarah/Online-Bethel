@@ -15,15 +15,22 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
          <div className="flex justify-between max-w-6xl mx-auto">
+
              <div className='hidden sm:inline border-r h-screen p-3 font-semibold'>
+               
+             {/* <div className='hidden sm:inline border-r h-screen p-3'> */}
+
                 <Sidebar/>
              </div>
                   <div>
                      {children}
                   </div>
-            <div>
-               <News/> 
-            </div>
+                 <div className="lg:flex-col p-3 h-screen border-l hidden lg:flex w-[24rem]">
+                   <div className="sticky top-0 py-2">
+                      <input type="text" placeholder="Search" className="bg-gray-200 border border-gray-200 rounded-3xl text-sm w-full px-4 py-2 "></input>
+                   </div>
+                    <News/> 
+                 </div>
          </div>
         
         
