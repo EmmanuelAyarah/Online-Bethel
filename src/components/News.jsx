@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react'
 
 export default function News() {
   const [news, setNews] = useState([]);
-  const [articleNum, setArticleNum] = useState(5);
+  const [articleNum, setArticleNum] = useState(3);
 
   useEffect(()=> {
       fetch('https://saurav.tech/NewsAPI/top-headlines/category/sports/us.json').then
